@@ -780,6 +780,7 @@ initpycurl(void)
 #endif
 #if LIBCURL_VERSION_NUM >= MAKE_LIBCURL_VERSION(7, 33, 0)
     insint_c(d, "XOAUTH2_BEARER", CURLOPT_XOAUTH2_BEARER);
+    insint_c(d, "DNS_INTERFACE", CURLOPT_DNS_INTERFACE);
 #endif
     insint_c(d, "SSL_VERIFYPEER", CURLOPT_SSL_VERIFYPEER);
     insint_c(d, "CAPATH", CURLOPT_CAPATH);
