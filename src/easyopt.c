@@ -284,6 +284,7 @@ do_curl_setopt_string_impl(CurlObject *self, int option, PyObject *obj)
 #endif
 #if LIBCURL_VERSION_NUM >= MAKE_LIBCURL_VERSION(7, 33, 0)
     case CURLOPT_XOAUTH2_BEARER:
+    case CURLOPT_DNS_INTERFACE:
 #endif
 #if LIBCURL_VERSION_NUM >= MAKE_LIBCURL_VERSION(7, 52, 0)
     case CURLOPT_PROXY_CAPATH:
